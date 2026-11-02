@@ -1094,3 +1094,7 @@ O título passa a se chamar **Playmuth**, com ícone próprio (anel com triângu
 ## 02/11/2026 — repositório público
 
 Criado https://github.com/GabrielSilla/Playmuth (público), só com `README.md` e `playmuth-banner.png` (cópias de `release/`) e o `LICENSE` GPL-3.0. As versões vão em Releases, cada uma com `Playmuth-<versão>.zip` e `Playmuth-<versão>-source.zip` (gerado com `git archive --prefix=Playmuth-<versão>-source/ HEAD -- . ":!console-reports"`). O código do dia a dia continua no repositório privado Azimuth-PS5. Ao mudar o `release/README.md`, copiar para o repositório público.
+
+## 02/11/2026 — projeto inteiro no repositório público Playmuth
+
+A pedido do usuário, todo o projeto passou para https://github.com/GabrielSilla/Playmuth (público). O repositório privado Azimuth-PS5 vai ser apagado pelo usuário. O README público (antes `release/README.md`) virou o `README.md` da raiz, com o banner em `playmuth-banner.png`. O README antigo do projeto foi para `docs/PROJETO.md`, com os links corrigidos. O histórico foi reescrito com o autor `gabriel.silla2@hotmail.com`, no lugar do e-mail corporativo. Os shaders do Azimuth compilados (`host/src/win32/CompiledShaders.inc`) foram publicados por decisão do usuário: são código da Almost There Games, e já iam dentro do eboot das releases.
