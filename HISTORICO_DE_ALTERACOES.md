@@ -1089,3 +1089,8 @@ O título passa a se chamar **Playmuth**, com ícone próprio (anel com triângu
 ## 02/11/2026 — título 1.53: ícone e banner do Playmuth
 
 Ícone gerado pelo usuário com o GPT ("P" ciano com linhas de velocidade, triângulo de play e agulha de bússola) convertido para 512 x 512 RGB em title/assets/playmuth-icon.png. O make_icon.py passa a conferir e copiar esse arquivo. Banner de 1280 x 640 em release/playmuth-banner.png, no README público. Host igual ao da 1.52. contentVersion 01.000.153.
+
+
+## 02/11/2026 — repositório público
+
+Criado https://github.com/GabrielSilla/Playmuth (público), só com `README.md` e `playmuth-banner.png` (cópias de `release/`) e o `LICENSE` GPL-3.0. As versões vão em Releases, cada uma com `Playmuth-<versão>.zip` e `Playmuth-<versão>-source.zip` (gerado com `git archive --prefix=Playmuth-<versão>-source/ HEAD -- . ":!console-reports"`). O código do dia a dia continua no repositório privado Azimuth-PS5. Ao mudar o `release/README.md`, copiar para o repositório público.
