@@ -1,0 +1,6 @@
+{
+  "localTime": "2026-11-01T13:53:31.271171-03:00",
+  "remoteLatestLogTimestamp": 1793554161773,
+  "reportedFps": 47,
+  "note": "User observed overlay at 47 FPS; approximate marker when report was received/read, not an exact synchronized frame timestamp. 1.36 host FPS remains a ~10 s mean."
+}

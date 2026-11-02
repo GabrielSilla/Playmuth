@@ -1,0 +1,23 @@
+# Build outputs
+build/
+dist/
+*.o
+*.elf
+host/azimuth-ps5-host-linux
+probe/azimuth-ps5-probe-linux
+gpu-probe/azimuth-ps5-gpu-probe-linux
+
+# Upstream sources fetched by title/prepare.sh (their own git checkouts)
+title/.deps/
+
+# Console captures: keep the analyses and the scripts, not the raw logs,
+# screenshots and dumps (over 1 GB)
+console-reports/**
+!console-reports/**/
+!console-reports/**/*.md
+!console-reports/**/*.py
+!console-reports/**/*.json
+
+# Python
+__pycache__/
+*.pyc

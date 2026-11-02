@@ -1,0 +1,58 @@
+     1.7 ms  Azimuth_PS5 GPU probe 0.8 (linux)
+     4.1 ms  Processo 523 "azimuth-ps5-gpu"
+     7.4 ms  O pid 522 do probe anterior agora e outro processo ("sleep"): nao foi tocado
+    11.2 ms  Calibracao 1: escrita em 0x10 (calibrationStore=0x57c338cf0c40, retoma em 0x57c338cf0c51), pilha normal
+    [tratador] sinal 11 (codigo 1) na calibracao 1, entrada 1, endereco 0x10
+    contexto do sinal em 0x7ffd28c4a0c0 (pelos cabecalhos, rip fica em +0xa8):
+    +0x000  0000000000000007 0000000000000000 0000000000000000 0000000000000002
+    +0x020  0000000000000000 0000000000000000 0000000000000000 0000000000000008
+    +0x040  0000000000000246 00007ffd28c4a8f8 0000000000000001 00000000ffffff90
+    +0x060  000057c338cf5b98 0000000000000000 0000000000000001 00007ffd28c4a870
+    +0x080  0000000000000001 0000000000000000 0000000000000010 000057c338d362a0
+    +0x0a0  00007ffd28c4a658 000057c338cf0c4b 0000000000010246 002b000000000033
+    +0x0c0  0000000000000006 000000000000000e 0000000000000000 0000000000000010
+    +0x0e0  00007ffd28c4a280 000057c359c716e0 00007ffd28c4a1e0 0000717056699bb0
+    +0x100  40267446950fc71d 000057c359c70010 000057c359c70010 00000000ffffff90
+    +0x120  00007ffd28c4a210 0000000000000000 000000000000000b 0000000000000001
+    +0x140  0000000000000010 0000000000000000 0000000000000000 0000000000000000
+    +0x160  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x180  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x1a0  0000000000000000 0000000000000000 0000717056812ac0 0000003000000018
+    +0x1c0  000000000000037f 0000000000000000 0000000000000000 0000ffff00001fa0
+    +0x1e0  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x200  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x220  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x240  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x260  000057c359c726e0 0000000000000000 000057c359c716e0 000057c359c716e0
+    +0x280  000000000000ff00 0000000000000000 000000000000ff00 0000000000000000
+    +0x2a0  62696c5f5f004554 5f796c7261655f63 0000000000000000 0000000000000000
+    +0x2c0  0000000000000000 0000000000000000 2f2f2f2f2f2f2f2f 2f2f2f2f2f2f2f2f
+    +0x2e0  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x300  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    +0x320  0000000000000000 0000000000000000 0000000000000000 0000000000000000
+    [tratador] rip 0x57c338cf0c4b em contexto+0xa8, rsp 0x7ffd28c4a658 em contexto+0xa0
+    88.8 ms    voltou pela edicao do contexto: rip 0x57c338cf0c4b, endereco 0x10, rsp 0x7ffd28c4a658
+    90.2 ms  Calibracao 2: chamada de ponteiro nulo (calibrationCall=0x57c338cf0c60), pilha normal
+    [tratador] sinal 11 (codigo 1) na calibracao 2, entrada 1, endereco (nil)
+    [tratador] rip 0x0 em contexto+0xa8, rsp 0x7ffd28c4a648 em contexto+0xa0
+    93.7 ms    voltou pela edicao do contexto: rip 0x0, endereco 0x0, rsp 0x7ffd28c4a648
+    94.9 ms    [rsp] 0x57c338cf0c71 (retorno esperado logo depois de calibrationCall=0x57c338cf0c60)
+    96.2 ms  Etapa 1: carregar o RADV: libvulkan.so.1 (140725287428592 bytes)
+    97.4 ms  vkGetInstanceProcAddr=0x7170569ada00, vk_icdNegotiateLoaderICDInterfaceVersion=(nil)
+    98.5 ms  Etapa 2: instancia Vulkan e dispositivos fisicos
+   100.0 ms  Vulkan da instancia: 1.4.341
+   114.2 ms  vkCreateInstance: 0
+   115.9 ms  vkEnumeratePhysicalDevices: 0, 1 dispositivo(s)
+   117.7 ms  Dispositivo: "llvmpipe (LLVM 21.1.8, 256 bits)" vendor 0x10005 device 0x0000, CPU, Vulkan 1.4.335, driver 0x06800008
+   118.9 ms    heap 0: 7856 MiB (local)
+   120.0 ms    tipo de memoria 0: heap 0, flags 0xf
+   121.5 ms    fila 0: flags 0xf, 1 fila(s)
+   122.6 ms  Etapa 3: dispositivo logico (inicializa o driver da GPU pelo libSceAgc)
+   132.6 ms  vkCreateDevice: 0
+   134.1 ms  Etapa 4: a GPU preenche um buffer e a CPU confere
+   135.5 ms  Buffer de 4096 bytes na memoria tipo 0, mapeado em 0x717054c32000
+   136.8 ms  Enviando vkCmdFillBuffer para a fila (espera maxima de 2 s)
+   138.3 ms  Fence sinalizada em 0.07 ms; 0 de 1024 palavras diferentes de 0xa5c3e10f (primeira: 0xa5c3e10f)
+   140.5 ms  Limpeza: descarregando os modulos carregados pelo probe
+   141.7 ms  [PASSOU] GPU probe: a GPU executou comandos pelo Vulkan
+   143.4 ms  Fim do GPU probe

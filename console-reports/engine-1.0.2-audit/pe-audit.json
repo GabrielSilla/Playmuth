@@ -1,0 +1,525 @@
+{
+  "path": "C:\\Games\\PC\\FH2\\azimuth.exe",
+  "sha256": "42527964f48c90a537f2414200b8598ab9a6f92919bfbe046dbecccb36e7c597",
+  "bytes": 9715712,
+  "imageBase": "0x140000000",
+  "imageSize": 10153984,
+  "entry": "0x71675c",
+  "dllCharacteristics": "0x8160",
+  "directories": [
+    [
+      0,
+      0
+    ],
+    [
+      9311004,
+      320
+    ],
+    [
+      10104832,
+      28608
+    ],
+    [
+      9883648,
+      220116
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      10133504,
+      18352
+    ],
+    [
+      8597424,
+      84
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      8597888,
+      40
+    ],
+    [
+      8597104,
+      320
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      8077312,
+      2416
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "size": 8072976,
+      "raw": 1024,
+      "rawsize": 8073216,
+      "flags": 1610612768
+    },
+    {
+      "name": ".rdata",
+      "rva": 8077312,
+      "size": 1242432,
+      "raw": 8074240,
+      "rawsize": 1242624,
+      "flags": 1073741888
+    },
+    {
+      "name": ".data",
+      "rva": 9322496,
+      "size": 557572,
+      "raw": 9316864,
+      "rawsize": 131584,
+      "flags": 3221225536
+    },
+    {
+      "name": ".pdata",
+      "rva": 9883648,
+      "size": 220116,
+      "raw": 9448448,
+      "rawsize": 220160,
+      "flags": 1073741888
+    },
+    {
+      "name": ".rsrc",
+      "rva": 10104832,
+      "size": 28608,
+      "raw": 9668608,
+      "rawsize": 28672,
+      "flags": 1073741888
+    },
+    {
+      "name": ".reloc",
+      "rva": 10133504,
+      "size": 18352,
+      "raw": 9697280,
+      "rawsize": 18432,
+      "flags": 1107296320
+    }
+  ],
+  "imports": {
+    "USER32.dll": [
+      "ShowWindow",
+      "DisplayConfigGetDeviceInfo",
+      "GetDisplayConfigBufferSizes",
+      "IntersectRect",
+      "QueryDisplayConfig",
+      "EqualRect",
+      "GetWindowRect",
+      "GetWindowThreadProcessId",
+      "EnableWindow",
+      "GetCursorPos",
+      "LoadImageW",
+      "PtInRect",
+      "SystemParametersInfoW",
+      "SetForegroundWindow",
+      "SetCursor",
+      "LoadCursorW",
+      "TranslateMessage",
+      "SetFocus",
+      "IsWindowEnabled",
+      "GetForegroundWindow",
+      "SetWindowPlacement",
+      "PeekMessageW",
+      "DispatchMessageW",
+      "GetAsyncKeyState",
+      "IsWindow",
+      "GetWindowPlacement",
+      "WindowFromPoint",
+      "GetClientRect",
+      "MonitorFromPoint",
+      "MessageBoxW",
+      "PostThreadMessageW",
+      "RegisterClassExW",
+      "CharUpperBuffW",
+      "SetTimer",
+      "KillTimer",
+      "MsgWaitForMultipleObjectsEx",
+      "GetWindow",
+      "GetDC",
+      "MsgWaitForMultipleObjects",
+      "CreateIconIndirect",
+      "ReleaseDC",
+      "RegisterDeviceNotificationW",
+      "GetMonitorInfoW",
+      "DefWindowProcW",
+      "AdjustWindowRectEx",
+      "GetKeyState",
+      "PostMessageW",
+      "GetMessageW",
+      "DestroyWindow",
+      "IsWindowVisible",
+      "SetWindowPos",
+      "MonitorFromWindow",
+      "SetWindowLongPtrW",
+      "CreateWindowExW",
+      "ScreenToClient",
+      "GetSystemMetrics",
+      "GetWindowLongPtrW"
+    ],
+    "GDI32.dll": [
+      "DeleteObject",
+      "CreateBitmap",
+      "CreateSolidBrush",
+      "CreateDIBSection"
+    ],
+    "DWrite.dll": [
+      "DWriteCreateFactory"
+    ],
+    "SHELL32.dll": [
+      "ShellExecuteW",
+      "SHCreateItemFromParsingName",
+      "CommandLineToArgvW"
+    ],
+    "ole32.dll": [
+      "CoUninitialize",
+      "CoTaskMemAlloc",
+      "CoGetApartmentType",
+      "CreateStreamOnHGlobal",
+      "CoInitializeEx",
+      "CoIncrementMTAUsage",
+      "CoTaskMemFree",
+      "CoCreateInstance"
+    ],
+    "api-ms-win-core-winrt-string-l1-1-0.dll": [
+      "WindowsCreateStringReference"
+    ],
+    "api-ms-win-core-winrt-l1-1-0.dll": [
+      "RoGetActivationFactory"
+    ],
+    "DINPUT8.dll": [
+      "DirectInput8Create"
+    ],
+    "d3d12.dll": [
+      "#102",
+      "#101",
+      "D3D12SerializeRootSignature"
+    ],
+    "dxgi.dll": [
+      "CreateDXGIFactory2",
+      "CreateDXGIFactory1"
+    ],
+    "D3DCOMPILER_47.dll": [
+      "D3DCompile"
+    ],
+    "bcrypt.dll": [
+      "BCryptOpenAlgorithmProvider",
+      "BCryptCreateHash",
+      "BCryptFinishHash",
+      "BCryptDestroyHash",
+      "BCryptHashData"
+    ],
+    "api-ms-win-core-synch-l1-2-0.dll": [
+      "WaitOnAddress",
+      "WakeByAddressSingle",
+      "WakeByAddressAll"
+    ],
+    "WINMM.dll": [
+      "timeBeginPeriod"
+    ],
+    "KERNEL32.dll": [
+      "GetConsoleMode",
+      "GetConsoleOutputCP",
+      "GetFileType",
+      "HeapSize",
+      "HeapReAlloc",
+      "EnumSystemLocalesW",
+      "GetUserDefaultLCID",
+      "IsValidLocale",
+      "GetLocaleInfoW",
+      "LCMapStringW",
+      "FlsFree",
+      "FlsSetValue",
+      "FlsGetValue",
+      "FlsAlloc",
+      "ExitProcess",
+      "GetStdHandle",
+      "SetConsoleCtrlHandler",
+      "FreeLibraryAndExitThread",
+      "ExitThread",
+      "TlsSetValue",
+      "TlsGetValue",
+      "TlsAlloc",
+      "InitializeCriticalSectionAndSpinCount",
+      "RtlUnwindEx",
+      "GetStartupInfoW",
+      "FreeEnvironmentStringsW",
+      "IsProcessorFeaturePresent",
+      "UnhandledExceptionFilter",
+      "WriteConsoleW",
+      "RtlLookupFunctionEntry",
+      "GetCPInfo",
+      "GetStringTypeW",
+      "EncodePointer",
+      "DeleteCriticalSection",
+      "LeaveCriticalSection",
+      "GetSystemTimeAsFileTime",
+      "IsValidCodePage",
+      "GetCommandLineA",
+      "GetOEMCP",
+      "TlsFree",
+      "GetEnvironmentStringsW",
+      "InitializeCriticalSectionEx",
+      "InitOnceBeginInitialize",
+      "InitOnceComplete",
+      "AreFileApisANSI",
+      "SetFileInformationByHandle",
+      "InitializeSListHead",
+      "SetStdHandle",
+      "GetNativeSystemInfo",
+      "GetExitCodeThread",
+      "WaitForSingleObjectEx",
+      "SleepConditionVariableSRW",
+      "RtlVirtualUnwind",
+      "FindNextFileW",
+      "WakeAllConditionVariable",
+      "WakeConditionVariable",
+      "FormatMessageA",
+      "GetThreadContext",
+      "CreateToolhelp32Snapshot",
+      "ResumeThread",
+      "SuspendThread",
+      "Thread32First",
+      "Thread32Next",
+      "SystemTimeToFileTime",
+      "TzSpecificLocalTimeToSystemTime",
+      "SystemTimeToTzSpecificLocalTime",
+      "GetCommandLineW",
+      "OutputDebugStringA",
+      "GetFileAttributesW",
+      "IsDebuggerPresent",
+      "SetThreadDescription",
+      "CompareStringOrdinal",
+      "GetTickCount64",
+      "GetCurrentThread",
+      "ReadFile",
+      "GetFileSizeEx",
+      "RtlCaptureContext",
+      "GetCurrentProcess",
+      "WriteFile",
+      "TerminateProcess",
+      "GetFinalPathNameByHandleW",
+      "GetModuleFileNameW",
+      "GetEnvironmentVariableW",
+      "WaitForSingleObject",
+      "CreateFileW",
+      "GetCurrentThreadId",
+      "GetThreadDescription",
+      "RtlCaptureStackBackTrace",
+      "CreateEventW",
+      "Sleep",
+      "GetLastError",
+      "SetEvent",
+      "CloseHandle",
+      "RaiseException",
+      "CreateThread",
+      "GetProcAddress",
+      "LocalFree",
+      "GetCurrentProcessId",
+      "CreateProcessW",
+      "GetModuleHandleW",
+      "OpenThread",
+      "LoadLibraryExW",
+      "SetUnhandledExceptionFilter",
+      "VirtualProtect",
+      "SetLastError",
+      "VirtualFree",
+      "VirtualAlloc",
+      "GetUserDefaultLocaleName",
+      "FlushInstructionCache",
+      "WideCharToMultiByte",
+      "SetWaitableTimer",
+      "WaitForMultipleObjects",
+      "SetThreadPriority",
+      "DuplicateHandle",
+      "ReleaseSRWLockExclusive",
+      "AcquireSRWLockExclusive",
+      "QueryPerformanceFrequency",
+      "CreateWaitableTimerExW",
+      "QueryPerformanceCounter",
+      "SetEnvironmentVariableW",
+      "GlobalMemoryStatusEx",
+      "VirtualQuery",
+      "TrySubmitThreadpoolCallback",
+      "DeleteFileW",
+      "MoveFileExW",
+      "CancelWaitableTimer",
+      "CreateDirectoryW",
+      "FindFirstFileExW",
+      "GetFullPathNameW",
+      "RemoveDirectoryW",
+      "FindClose",
+      "UnmapViewOfFile",
+      "MultiByteToWideChar",
+      "GetFileAttributesExW",
+      "CreateFileMappingW",
+      "MapViewOfFile",
+      "CreateThreadpoolIo",
+      "GetQueuedCompletionStatus",
+      "ReleaseSRWLockShared",
+      "GetOverlappedResultEx",
+      "AcquireSRWLockShared",
+      "SetDefaultDllDirectories",
+      "GetCurrentPackageFullName",
+      "WritePrivateProfileStringW",
+      "GetUserPreferredUILanguages",
+      "GetPrivateProfileStringW",
+      "GetSystemTime",
+      "QueryDosDeviceW",
+      "GetSystemDirectoryW",
+      "K32EnumProcessModules",
+      "K32GetMappedFileNameW",
+      "GetSystemWindowsDirectoryW",
+      "WaitForThreadpoolTimerCallbacks",
+      "CloseThreadpoolTimer",
+      "SetThreadpoolTimer",
+      "CreateThreadpoolTimer",
+      "FindFirstFileW",
+      "GetLocaleInfoEx",
+      "LocaleNameToLCID",
+      "GetModuleHandleExW",
+      "FreeLibrary",
+      "RtlAddFunctionTable",
+      "RtlDeleteFunctionTable",
+      "GetProcessId",
+      "GetSystemInfo",
+      "GetThreadId",
+      "TryEnterCriticalSection",
+      "EnterCriticalSection",
+      "GetProcessIdOfThread",
+      "SwitchToThread",
+      "SleepEx",
+      "HeapFree",
+      "RtlPcToFileHeader",
+      "FormatMessageW",
+      "HeapAlloc",
+      "GetProcessHeap",
+      "DecodePointer",
+      "GetFileInformationByHandleEx",
+      "SetFilePointer",
+      "SetEndOfFile",
+      "GetACP",
+      "GetDiskFreeSpaceExW",
+      "SetFilePointerEx",
+      "CopyFileW",
+      "FlushFileBuffers",
+      "GetSystemTimePreciseAsFileTime",
+      "GetProcessAffinityMask",
+      "FlushProcessWriteBuffers",
+      "GetWriteWatch",
+      "AddVectoredExceptionHandler",
+      "TryAcquireSRWLockExclusive",
+      "SubmitThreadpoolWork",
+      "CreateThreadpoolWork",
+      "LCMapStringEx",
+      "FileTimeToSystemTime",
+      "GetLocalTime"
+    ]
+  },
+  "loadConfigSize": "0x140",
+  "loadConfigQwords": {
+    "0x0": "0x140",
+    "0x58": "0x1408e5180",
+    "0x70": "0x1407b4970",
+    "0x78": "0x1407b4980",
+    "0x90": "0x100",
+    "0x100": "0x140847944",
+    "0x118": "0x1407b4978",
+    "0x120": "0x1407b4988",
+    "0x128": "0x1407b4990",
+    "0x130": "0x1407b4998",
+    "0x138": "0x1407b49a0"
+  },
+  "missingSymbols": {
+    "USER32.dll": [
+      "DisplayConfigGetDeviceInfo",
+      "GetDisplayConfigBufferSizes",
+      "IntersectRect",
+      "QueryDisplayConfig",
+      "EqualRect",
+      "GetWindowRect",
+      "PtInRect",
+      "WindowFromPoint",
+      "MonitorFromPoint",
+      "PostThreadMessageW",
+      "CreateIconIndirect",
+      "RegisterDeviceNotificationW",
+      "ScreenToClient"
+    ],
+    "GDI32.dll": [
+      "CreateBitmap",
+      "CreateSolidBrush"
+    ],
+    "DWrite.dll": [
+      "DWriteCreateFactory"
+    ],
+    "SHELL32.dll": [
+      "ShellExecuteW",
+      "CommandLineToArgvW"
+    ],
+    "ole32.dll": [
+      "CoIncrementMTAUsage"
+    ],
+    "api-ms-win-core-winrt-string-l1-1-0.dll": [
+      "WindowsCreateStringReference"
+    ],
+    "api-ms-win-core-winrt-l1-1-0.dll": [
+      "RoGetActivationFactory"
+    ],
+    "DINPUT8.dll": [
+      "DirectInput8Create"
+    ],
+    "d3d12.dll": [
+      "#102",
+      "#101"
+    ],
+    "WINMM.dll": [
+      "timeBeginPeriod"
+    ],
+    "KERNEL32.dll": [
+      "RtlUnwindEx",
+      "GetThreadContext",
+      "CreateToolhelp32Snapshot",
+      "SuspendThread",
+      "Thread32First",
+      "Thread32Next",
+      "TzSpecificLocalTimeToSystemTime",
+      "RtlCaptureContext",
+      "RaiseException",
+      "CreateProcessW",
+      "CreateThreadpoolIo",
+      "GetUserPreferredUILanguages",
+      "QueryDosDeviceW",
+      "K32EnumProcessModules",
+      "K32GetMappedFileNameW",
+      "GetSystemWindowsDirectoryW",
+      "SubmitThreadpoolWork",
+      "CreateThreadpoolWork"
+    ]
+  }
+}

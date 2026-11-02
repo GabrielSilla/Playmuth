@@ -1,0 +1,44 @@
+{
+  "ip": "192.168.15.7",
+  "elapsedSeconds": 62.391000000000076,
+  "events": [
+    "klog connected"
+  ],
+  "snapshots": [
+    {
+      "snapshot": 0,
+      "localTime": "2026-11-01T14:01:06.064740-03:00",
+      "elapsedSeconds": 0.3120000000001255,
+      "title": "Azimuth_PS5 title 1.37, modo=host, main=1004001a0, pid=904",
+      "hostBytes": 2302921
+    },
+    {
+      "snapshot": 1,
+      "localTime": "2026-11-01T14:01:21.070875-03:00",
+      "elapsedSeconds": 15.312000000000126,
+      "title": "Azimuth_PS5 title 1.37, modo=host, main=1004001a0, pid=904",
+      "hostBytes": 2502457
+    },
+    {
+      "snapshot": 2,
+      "localTime": "2026-11-01T14:01:36.159883-03:00",
+      "elapsedSeconds": 30.406000000000176,
+      "title": "Azimuth_PS5 title 1.37, modo=host, main=1004001a0, pid=904",
+      "hostBytes": 2866335
+    },
+    {
+      "snapshot": 3,
+      "localTime": "2026-11-01T14:01:51.131160-03:00",
+      "elapsedSeconds": 45.375,
+      "title": "Azimuth_PS5 title 1.37, modo=host, main=1004001a0, pid=904",
+      "hostBytes": 3078767
+    },
+    {
+      "snapshot": 4,
+      "localTime": "2026-11-01T14:02:06.188538-03:00",
+      "elapsedSeconds": 60.437000000000126,
+      "title": "Azimuth_PS5 title 1.37, modo=host, main=1004001a0, pid=904",
+      "hostBytes": 3466401
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "samples": 14,
+  "firstTimestamp": 1793553751060,
+  "lastTimestamp": 1793553881280,
+  "averageFps": 59.292857142857144,
+  "minFps": 57.3,
+  "maxFps": 60.1,
+  "maxIntervalMs": 92.25,
+  "over50": 10,
+  "over100": 0,
+  "p99WindowMinMs": 17.0,
+  "p99WindowMaxMs": 41.0,
+  "maxHandleWaitMs": 0.041597,
+  "totalHandleWaitMs": 22.604319000000004,
+  "maxIoCopyMs": 0.54,
+  "maxIoReadMs": 5.33
+}

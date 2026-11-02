@@ -1,0 +1,16 @@
+{
+  "version": "1.35",
+  "pid": 662,
+  "freshSamples": 0,
+  "identicalInitialFinalHost": true,
+  "historicalCrtWindows": 25,
+  "historicalCrtTotals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "userConfirmedGameClosed": true
+}

@@ -1,0 +1,2 @@
+# This executable exposes no plugin ABI. All its imports still bind to system modules.
+{ local: *; };

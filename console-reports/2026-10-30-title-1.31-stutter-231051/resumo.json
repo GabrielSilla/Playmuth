@@ -1,0 +1,18 @@
+{
+  "samples": 30,
+  "averageFps": 57.72666666666667,
+  "minFps": 53.0,
+  "maxFps": 60.1,
+  "intervals": 17318,
+  "maxIntervalMs": 198.55,
+  "over50": 127,
+  "over100": 36,
+  "watchMprotect": 1050984,
+  "watchSkipped": 270748,
+  "nonwatchMprotect": 222,
+  "slowReads": 103,
+  "maxReadMs": 53.622,
+  "fatalHost": 0,
+  "gpuFault": 0,
+  "crashSignals": 0
+}

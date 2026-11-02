@@ -1,0 +1,6 @@
+{
+  "localTime": "2026-11-01T13:46:13.118309-03:00",
+  "remoteLatestLogTimestamp": 1793553731035,
+  "conservativeFullDrivingWindowCutoff": 1793553751035,
+  "note": "User confirmed driving. Cutoff adds 20 seconds to latest remote line to exclude window overlap and heartbeat age; local and console wall clocks are not assumed synchronized."
+}

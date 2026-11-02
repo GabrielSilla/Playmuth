@@ -1,0 +1,172 @@
+{
+  "Factory": {
+    "slots": 48,
+    "methods": {
+      "7": "FontFile",
+      "15": "Format",
+      "16": "CreateTypography",
+      "18": "Layout",
+      "23": "Analysis",
+      "26": "CreateSystemFallback",
+      "27": "CreateFallbackBuilder",
+      "30": "Analysis2",
+      "31": "Analysis2",
+      "36": "CreateBuilder",
+      "37": "Collection",
+      "43": "CreateBuilder"
+    }
+  },
+  "File": {
+    "slots": 6,
+    "methods": {}
+  },
+  "Builder": {
+    "slots": 8,
+    "methods": {
+      "5": "AddSet",
+      "6": "CreateFontSet",
+      "7": "AddFile"
+    }
+  },
+  "FontSet": {
+    "slots": 13,
+    "methods": {
+      "3": "FontCount"
+    }
+  },
+  "Collection": {
+    "slots": 9,
+    "methods": {
+      "3": "FamilyCount",
+      "4": "Family",
+      "5": "FindFamily",
+      "7": "CreateFontSet",
+      "8": "Family"
+    }
+  },
+  "Family": {
+    "slots": 11,
+    "methods": {
+      "4": "FontCount",
+      "5": "FontAt",
+      "6": "FamilyNames",
+      "7": "MatchingFont"
+    }
+  },
+  "Font": {
+    "slots": 14,
+    "methods": {
+      "3": "FontFamily",
+      "4": "FontWeight",
+      "5": "FontStretch",
+      "6": "FontStyle",
+      "7": "Zero",
+      "10": "Zero",
+      "11": "FontMetrics",
+      "12": "HasChar",
+      "13": "Face"
+    }
+  },
+  "Face": {
+    "slots": 18,
+    "methods": {
+      "3": "FaceType",
+      "5": "Zero",
+      "6": "Zero",
+      "7": "Zero",
+      "8": "FontMetrics",
+      "9": "GlyphCount",
+      "10": "GlyphMetrics",
+      "11": "GlyphIndices"
+    }
+  },
+  "FallbackBuilder": {
+    "slots": 6,
+    "methods": {
+      "3": "AddMapping",
+      "4": "AddMappings",
+      "5": "CreateSystemFallback"
+    }
+  },
+  "Fallback": {
+    "slots": 4,
+    "methods": {}
+  },
+  "Format": {
+    "slots": 36,
+    "methods": {
+      "22": "FontWeight",
+      "23": "FontStyle",
+      "24": "FontStretch",
+      "25": "GetFontSize",
+      "34": "SetFallback",
+      "35": "GetFallback",
+      "3": "SetTextAlign",
+      "11": "GetTextAlign",
+      "4": "SetParagraphAlign",
+      "12": "GetParagraphAlign",
+      "5": "SetWrap",
+      "13": "GetWrap",
+      "6": "SetReading",
+      "14": "GetReading",
+      "7": "SetFlow",
+      "15": "GetFlow"
+    }
+  },
+  "Layout": {
+    "slots": 71,
+    "methods": {
+      "28": "SetWidth",
+      "29": "SetHeight",
+      "31": "SetFamily",
+      "32": "SetFontWeight",
+      "33": "SetFontStyle",
+      "35": "SetFontSize",
+      "38": "SetEffect",
+      "40": "SetTypography",
+      "42": "GetWidth",
+      "43": "GetHeight",
+      "58": "Draw",
+      "59": "LineMetrics",
+      "60": "TextMetrics",
+      "61": "Overhang",
+      "62": "ClusterMetrics",
+      "67": "PairKerning",
+      "69": "Spacing",
+      "3": "SetTextAlign",
+      "11": "GetTextAlign",
+      "4": "SetParagraphAlign",
+      "12": "GetParagraphAlign",
+      "5": "SetWrap",
+      "13": "GetWrap",
+      "6": "SetReading",
+      "14": "GetReading",
+      "7": "SetFlow",
+      "15": "GetFlow"
+    }
+  },
+  "Typography": {
+    "slots": 6,
+    "methods": {
+      "3": "Feature"
+    }
+  },
+  "Analysis": {
+    "slots": 6,
+    "methods": {
+      "3": "TextureBounds",
+      "4": "Texture"
+    }
+  },
+  "Strings": {
+    "slots": 9,
+    "methods": {
+      "3": "StringCount",
+      "4": "FindLocale",
+      "5": "LocaleLength",
+      "6": "Locale",
+      "7": "StringLength",
+      "8": "String"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "sampledSlowFrames": 25,
+  "memoryEvents": 944,
+  "droppedMemoryEvents": 605,
+  "framesWithMemoryOverlap": 15,
+  "sameThreadOverlapPairs": 0,
+  "maxMemoryMs": 13.225198,
+  "maxPreviousPresentMs": 0.05,
+  "maxCurrentPresentMs": 0.05
+}

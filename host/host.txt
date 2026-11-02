@@ -1,0 +1,45 @@
+1793109170201 Azimuth_PS5 host 0.7 (linux), fase 2: APIs do Windows para o motor original 0.9.7, launcher em GDI
+1793109170245 Motor: /mnt/c/Users/Gabriel/Documents/Codex/2026-10-22/car/outputs/ps5-azimuth/import/Azimuth-FH2/azimuth.exe (3087872 bytes)
+1793109170247 Etapa 1: validar SHA-256, layout e load config do motor
+1793109170261 Etapa 2: mapear e relocar o motor (TLS estatico no slot 0)
+1793109170266 Motor mapeado em 0x140000000 (base preferida)
+1793109170267 Etapa 3: 224 de 256 imports implementados pelo host; os demais sao paradas de diagnostico
+1793109170268 Unidade: E:\PC\FH2 -> /mnt/c/Users/Gabriel/Documents/Codex/2026-10-22/car/outputs/ps5-azimuth/import/Azimuth-FH2
+1793109170270 Etapa 4: thread principal do motor 256; chamando o entry point ORIGINAL (engine+0x1dc6ec)
+1793109170271 GetProcAddress: KERNEL32!GetTempPath2W ainda sem implementacao
+1793109170307 Politica de busca de DLL do motor: 2560
+1793109170332 LoadLibraryExW: dbghelp.dll (flags 2048) ainda sem provider
+1793109170334 CreateThread do motor: thread 260 rotina=engine+0x149f0 pilha=1048576
+1793109170335 Thread do motor 260: Azimuth end
+1793109170335 Thread do motor 260 iniciada
+1793109170336 GetModuleHandleW: ntdll.dll nao carregado
+1793109170339 GetModuleHandleW: ntdll.dll nao carregado
+1793109170341 CreateThread do motor: thread 264 rotina=engine+0x1e2940 pilha=0
+1793109170342 Thread do motor 264 iniciada
+1793109170342 LoadImageW: icone do motor nao carregado; janela virtual sem icone
+1793109170343 LoadLibraryExW: api-ms-win-appmodel-runtime-l1-1-2 (flags 2048) ainda sem provider
+1793109170345 LoadImageW: icone do motor nao carregado; janela virtual sem icone
+1793109170346 Thread do motor 264: Azimuth preparation
+1793109170347 Classe de janela registrada: Azimuth.Game.Win32
+1793109170349 D3D12GetDebugInterface {82bc481c-6b9b-4030-aedb-7ee3d1df1e63}: sem camada de debug no host (E_NOINTERFACE)
+1793109170349 Janela do motor criada: 0xae0002 "Azimuth" 1920x1080 em 0,0 estilo=0xcf0000
+1793109170351 CreateDXGIFactory2 flags=0 {1bc6ea02-ef36-464f-bf0c-21ca39e5168a}: o host ainda nao tem GPU (DXGI_ERROR_UNSUPPORTED)
+1793109170352 LoadLibraryExW: xinput1_4.dll (flags 2048) ainda sem provider
+1793109170353 GetProcAddress: KERNEL32!CompareStringEx ainda sem implementacao
+1793109170355 CreateThread do motor: thread 268 rotina=engine+0x1e2940 pilha=0
+1793109170356 GetProcAddress: KERNEL32!EnumSystemLocalesEx ainda sem implementacao
+1793109170357 Thread do motor 268 iniciada
+1793109170358 GetProcAddress: KERNEL32!GetDateFormatEx ainda sem implementacao
+1793109170359 Thread do motor 268: Azimuth game folder check
+1793109170360 GetProcAddress: KERNEL32!GetTimeFormatEx ainda sem implementacao
+1793109170362 GetFileAttributesW: E:\PC\FH2\game -> erro 2
+1793109170363 GetProcAddress: KERNEL32!IsValidLocaleName ainda sem implementacao
+1793109170364 Thread do motor 268 encerrada: codigo=0 (ExitThread)
+1793109170366 GetProcAddress: KERNEL32!LCIDToLocaleName ainda sem implementacao
+1793109170368 GetProcAddress: KERNEL32!LocaleNameToLCID ainda sem implementacao
+1793109170371 Mensagem do motor [Azimuth]: Azimuth stopped: CreateDXGIFactory2 HRESULT=0x887a0004 at azimuth+0x3c7b3
+
+The log is in E:\PC\FH2\data\logs.
+1793109170381 Fonte carregada: /mnt/c/Windows/Fonts/arial.ttf
+1793109170471 Motor parado pelo host na thread 260: o motor chamou TerminateProcess, codigo 3762440243
+1793109170473 Fim do host

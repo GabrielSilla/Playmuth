@@ -1,0 +1,11 @@
+{
+  "samples": 600,
+  "baselineMonoNs": 270103351663153,
+  "minWindowFps": 10.0,
+  "below50Samples": 23,
+  "zeroFrameSamples": 0,
+  "maxIntervalMs": 85.169,
+  "maxNoNewFrameMs": 55.928,
+  "maxSamplerWindowMs": 100.076,
+  "averageFpsByElapsedTime": 59.0499931108341
+}

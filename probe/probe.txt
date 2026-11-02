@@ -1,0 +1,9 @@
+Azimuth_PS5 probe 0.2 (linux); processadores online: 12; pid 12736
+[PASSOU] memoria executavel: pagina anonima RW->RX aceita
+[PASSOU] chamada ms_abi: codigo gerado chamou o host com 6 argumentos: 91 (esperado 91)
+  (informativo) mmap RWX direto: aceito
+[PASSOU] TEB pelo gs: 4 threads, 200000 leituras cada de gs:[0x30] e gs:[0x58], 0 divergencias, com trocas de contexto e libc
+[PASSOU] reserva na base do motor: 0x4000000 bytes em 0x140000000; pagina em 0x142000000 gravada e lida
+[PASSOU] reserva na faixa dos 64 GiB: 0x100000000 bytes em 0x1000000000; pagina em 0x1080000000 gravada e lida
+[PULADO] memoria para o titulo: crie ./memory-test para rodar (trava a interface do PS5 por cerca de 70 s)
+Resultado: 5 passaram, 0 falharam

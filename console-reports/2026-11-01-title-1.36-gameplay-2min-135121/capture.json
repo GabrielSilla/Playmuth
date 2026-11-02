@@ -1,0 +1,72 @@
+{
+  "ip": "192.168.15.7",
+  "elapsedSeconds": 121.48500000000001,
+  "events": [
+    "klog connected"
+  ],
+  "snapshots": [
+    {
+      "snapshot": 0,
+      "localTime": "2026-11-01T13:51:22.781310-03:00",
+      "elapsedSeconds": 0.9220000000000255,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 8984758
+    },
+    {
+      "snapshot": 1,
+      "localTime": "2026-11-01T13:51:37.902498-03:00",
+      "elapsedSeconds": 16.03200000000004,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 9425280
+    },
+    {
+      "snapshot": 2,
+      "localTime": "2026-11-01T13:51:53.023886-03:00",
+      "elapsedSeconds": 31.15700000000004,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 9666117
+    },
+    {
+      "snapshot": 3,
+      "localTime": "2026-11-01T13:52:07.993803-03:00",
+      "elapsedSeconds": 46.125,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 10142132
+    },
+    {
+      "snapshot": 4,
+      "localTime": "2026-11-01T13:52:23.093411-03:00",
+      "elapsedSeconds": 61.235000000000014,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 10395123
+    },
+    {
+      "snapshot": 5,
+      "localTime": "2026-11-01T13:52:38.197062-03:00",
+      "elapsedSeconds": 76.32800000000009,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 10908124
+    },
+    {
+      "snapshot": 6,
+      "localTime": "2026-11-01T13:52:53.882985-03:00",
+      "elapsedSeconds": 92.01600000000008,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 11180079
+    },
+    {
+      "snapshot": 7,
+      "localTime": "2026-11-01T13:53:08.318758-03:00",
+      "elapsedSeconds": 106.45300000000009,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 11720906
+    },
+    {
+      "snapshot": 8,
+      "localTime": "2026-11-01T13:53:23.165410-03:00",
+      "elapsedSeconds": 121.29700000000003,
+      "title": "Azimuth_PS5 title 1.36, modo=host, main=1004001a0, pid=903",
+      "hostBytes": 11983382
+    }
+  ]
+}

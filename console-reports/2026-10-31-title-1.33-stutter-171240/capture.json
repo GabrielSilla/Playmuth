@@ -1,0 +1,9 @@
+{
+  "ip": "192.168.15.7",
+  "elapsedSeconds": 2.688000000001921,
+  "events": [
+    "capture error: <urlopen error [WinError 10061] Nenhuma conex\u00e3o p\u00f4de ser feita porque a m\u00e1quina de destino as recusou ativamente>",
+    "klog: [WinError 10061] Nenhuma conex\u00e3o p\u00f4de ser feita porque a m\u00e1quina de destino as recusou ativamente"
+  ],
+  "snapshots": []
+}
