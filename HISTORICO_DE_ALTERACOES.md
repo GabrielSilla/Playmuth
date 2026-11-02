@@ -1081,3 +1081,7 @@ Com a 1.50 o jogo apareceu na tela, mas não respondia ao controle. O motor 1.0.
 ## 02/11/2026 — resultado da 1.51: jogo perfeito no motor 1.0.2
 
 O usuário confirmou que a 1.51 ficou perfeita: o jogo roda no motor Azimuth 1.0.2 com o controle do PS5 funcionando pelo `Windows.Gaming.Input`, em 4K, MSAA 4x e 60 FPS, sem engasgos. Documentação de estado atualizada (topo do title/README.md, seções 9 e 11 da base de conhecimento). Código enviado para o repositório privado https://github.com/GabrielSilla/Azimuth-PS5.
+
+## 02/11/2026 — título 1.52: Playmuth
+
+O título passa a se chamar **Playmuth**, com ícone próprio (anel com triângulo de "play"). O logo e o símbolo do Azimuth saíram do projeto: são marca da Almost There Games, e o usuário não tem autorização para usá-los. Sem o arquivo `title-mode`, o título agora roda o jogo (`host`). Como o eboot linka código GPL-3.0 (boilerplate e libc do ps5-payload-sdk), o projeto ganha um `LICENSE` GPL-3.0 e cada release pública leva o código-fonte. README do repositório público em release/README.md. contentVersion 01.000.152.

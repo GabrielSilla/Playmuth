@@ -4,7 +4,7 @@
   "conceptId": "78002",
   "contentBadgeType": 1,
   "contentId": "UP9000-FAKE78002_00-AZIMUTHPS50000001",
-  "contentVersion": "01.000.151",
+  "contentVersion": "01.000.152",
   "downloadDataSize": 0,
   "gameIntent": {
     "permittedIntents": [
@@ -16,10 +16,10 @@
   "localizedParameters": {
     "defaultLanguage": "en-US",
     "en-US": {
-      "titleName": "Azimuth Launcher"
+      "titleName": "Playmuth"
     },
     "pt-BR": {
-      "titleName": "Azimuth Launcher"
+      "titleName": "Playmuth"
     }
   },
   "masterVersion": "01.00",

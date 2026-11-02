@@ -1,4 +1,4 @@
-"""Rasterize the project-native Azimuth symbol SVG as a 512px RGB title icon."""
+"""Rasterize the Playmuth symbol SVG as a 512px RGB title icon (even-odd fill)."""
 import re
 import struct
 import xml.etree.ElementTree as ET
@@ -6,7 +6,7 @@ import zlib
 from pathlib import Path
 
 root = Path(__file__).resolve().parent
-svg = ET.parse(root / "assets/azimuth-symbol.svg").getroot()
+svg = ET.parse(root / "assets/playmuth-symbol.svg").getroot()
 assert svg.attrib["viewBox"] == "0 0 512 512"
 polygons = []
 for node in svg.iter():
@@ -30,7 +30,11 @@ for node in svg.iter():
             elif token != "Z":
                 raise ValueError("Unsupported SVG path command: " + token)
         polygons.append(points)
-assert len(polygons) == 3
+assert polygons
+left = int(min(x for p in polygons for x, _ in p)) - 1
+right = int(max(x for p in polygons for x, _ in p)) + 1
+top = int(min(y for p in polygons for _, y in p)) - 1
+bottom = int(max(y for p in polygons for _, y in p)) + 1
 
 
 def contains(points, x, y):
@@ -53,10 +57,10 @@ for y in range(512):
     rows.append(0)
     for x in range(512):
         covered = 0
-        if 64 <= x <= 448 and 159 <= y <= 353:
+        if left <= x <= right and top <= y <= bottom:
             for sy in range(4):
                 for sx in range(4):
-                    if any(contains(p, x+(sx+.5)/4, y+(sy+.5)/4) for p in polygons):
+                    if sum(contains(p, x+(sx+.5)/4, y+(sy+.5)/4) for p in polygons) % 2:
                         covered += 1
         rows.extend(round(a+(b-a)*covered/16) for a, b in zip(background, foreground))
 png = b"\x89PNG\r\n\x1a\n"

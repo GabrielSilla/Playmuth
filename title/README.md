@@ -1,6 +1,6 @@
-# Azimuth Launcher (Azimuth_PS5 como título) — 1.51
+# Playmuth (Azimuth_PS5 como título) — 1.52
 
-**Estado atual (02/11/2026):** o jogo roda perfeitamente no PS5 com o motor Azimuth 1.0.2: 4K, MSAA 4x, 60 FPS, sem engasgos, controle funcionando. Pacote `dist/Azimuth-Launcher-1.51.zip` (titleId FAKE78002).
+**Estado atual (02/11/2026):** o jogo roda perfeitamente no PS5 com o motor Azimuth 1.0.2: 4K, MSAA 4x, 60 FPS, sem engasgos, controle funcionando. Pacote `dist/Playmuth-1.52.zip` (titleId FAKE78002). Desde a 1.52 o título se chama **Playmuth**, para a distribuição pública.
 
 As versões estão em ordem cronológica de baixo para cima até a 1.27, logo abaixo. A partir da 1.28 elas foram acrescentadas no **fim** deste arquivo (seção "Título 1.28" em diante). O resumo de cada versão está em `HISTORICO_DE_ALTERACOES.md`, e as lições em `docs/BASE_DE_CONHECIMENTO_PS5.md`.
 
@@ -1668,3 +1668,14 @@ Próximo teste: o motor 1.0.2 na pasta do jogo deve passar do início do launche
 
 - O motor 1.0.2 lê o controle pelo `Windows.Gaming.Input.Gamepad`, não mais pelo XInput. O host implementa IGamepadStatics, a lista de controles e IGamepad (GetCurrentReading e put_Vibration) sobre o ScePad, em win32/Xinput.cpp e win32/gamepad_abi.c.
 - No log do host, "Windows.Gaming.Input: controle do PS5 entregue ao motor como Gamepad" e "motor leu o controle pela primeira vez" confirmam que funcionou.
+
+## Título 1.52 — Playmuth (02/11/2026)
+
+Preparação para a distribuição pública:
+- **Nome e ícone próprios:** o título passa de "Azimuth Launcher" para **Playmuth**, no menu, nas notificações, no `title.txt` e no pacote (`dist/Playmuth-1.52.zip`). O ícone novo é um anel com um triângulo de "play" (`assets/playmuth-symbol.svg`, rasterizado pelo `make_icon.py` com preenchimento par/ímpar). O logo e o símbolo do Azimuth (marca da Almost There Games) saíram do projeto: o usuário não tem autorização para usá-los como identidade do título. "Azimuth" fica só para descrever o que o Playmuth roda.
+- **Modo padrão `host`:** sem `/data/azimuth-ps5/title-mode`, o título roda o jogo (antes rodava o `smoke`), para funcionar como instalado. `smoke`, `gpu` e `d3d12` continuam pelo arquivo.
+- Mantidos o titleId FAKE78002, o contentId e as pastas `/data/azimuth-ps5` (logs e fontes), para quem já tem a instalação não precisar mudar nada.
+- **Licença:** o eboot linka código GPL-3.0 (o startup do PS5 Native App Boilerplate e o `libc.a` do ps5-payload-sdk, sem exceção de linkagem), e o pacote leva o `libc.prx` do boilerplate. Por isso, quem distribui o binário precisa oferecer o código-fonte sob GPL-3.0. O projeto ganha um `LICENSE` (GPL-3.0), e cada release pública leva o `.zip` do código daquela versão.
+- README do repositório público em `release/README.md`.
+
+contentVersion 01.000.152. SHA-256 do eboot.bin: `c25e9bce4695f21be15eadc900746816695caec7735b2fa5c822735174d27e24`. Sem teste no Linux; console pendente (só nome, ícone e modo padrão mudaram).

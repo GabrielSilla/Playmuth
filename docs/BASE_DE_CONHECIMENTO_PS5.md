@@ -362,6 +362,7 @@ Para acompanhar um teste em andamento, baixar o `host.txt` de novo a cada 30 s. 
 | 1.39 | Nome **Azimuth Launcher** e ícone novo |
 | 1.40 | Commit de memória direta em pedaços: fim da queda após ~10 min por fragmentação |
 | 1.41–1.51 | **Motor Azimuth 1.0.2:** 287 imports, WIC por `CoCreateInstance`, DirectWrite completo do launcher, TLS estático escrito pelo motor, shaders pré-compilados do 1.0.2 com despejo dos que faltam, `VirtualProtect` na imagem do motor, controle pelo `Windows.Gaming.Input` → **jogo funcionando perfeitamente no 1.0.2 (1.51)** |
+| 1.52 | Nome próprio **Playmuth** e ícone sem a marca do Azimuth; modo padrão `host`; licença GPL-3.0 e código-fonte em cada release pública |
 
 ---
 
@@ -384,7 +385,7 @@ Para acompanhar um teste em andamento, baixar o `host.txt` de novo a cada 30 s. 
 
 ---
 
-## 11. Estado atual (título 1.51)
+## 11. Estado atual (título 1.52, Playmuth)
 
 **O jogo roda perfeitamente** no PS5 com o motor Azimuth 1.0.2 (título 1.51, "Azimuth Launcher"): 4K, MSAA 4x, 60 FPS, sem engasgos, com o controle do PS5 pelo `Windows.Gaming.Input`. Confirmado pelo usuário em 02/11/2026. O 0.9.7 continua aceito pelo host.
 
@@ -393,6 +394,10 @@ Como se chegou aqui, em resumo:
 - **Engasgos curtos (1.31–1.38):** reduzidos atacando o custo de `mprotect`, faltas de página, handles e liberação de memória, sempre medindo com FPS em janelas de 100 ms (as médias de 10 s escondiam as quedas).
 - **Queda após ~10 min (1.39):** fragmentação da memória direta. Corrigida na 1.40.
 - **Motor 1.0.2 (1.41–1.51):** imports novos, DirectWrite, WIC, shaders e controle (subseções abaixo).
+
+Distribuição pública (1.52):
+- O título linka código GPL-3.0 (startup do boilerplate e `libc.a` do ps5-payload-sdk). Quem publica o binário precisa publicar o código-fonte junto, e cada release leva o `.zip` do código.
+- Não usar o nome nem o logo de terceiros como identidade do título. "Azimuth" fica só para descrever o que ele roda.
 
 Pontos de atenção:
 - Shaders de apresentação do 1.0.2 dependem das configurações (HDR etc.). Uma configuração nova pode gerar uma chave nova e tela preta: compilar o despejo de `shaders/` com `host/tools/precompile_shaders.py --dumps` (1.50).

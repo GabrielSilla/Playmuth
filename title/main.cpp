@@ -122,12 +122,14 @@ int main() {
     mkdir("/data/azimuth-ps5",0777);
     FILE* out=std::fopen("/data/azimuth-ps5/title.txt","w");
     if(!out)waitForClose();
-    char mode[32]="smoke";
+    // Without a title-mode file the title runs the game (1.52: the public
+    // release must work as installed); smoke, gpu and d3d12 stay for diagnosis.
+    char mode[32]="host";
     if(FILE* input=std::fopen("/data/azimuth-ps5/title-mode","r")) {
-        if(std::fscanf(input,"%31s",mode)!=1)std::strcpy(mode,"smoke");
+        if(std::fscanf(input,"%31s",mode)!=1)std::strcpy(mode,"host");
         std::fclose(input);
     }
-    std::fprintf(out,"Azimuth Launcher title 1.51, modo=%s, main=%p, pid=%d\n",mode,
+    std::fprintf(out,"Playmuth title 1.52, modo=%s, main=%p, pid=%d\n",mode,
                  reinterpret_cast<void*>(main),static_cast<int>(getpid()));
     std::fflush(out);fsync(fileno(out));
     int status=1;
@@ -150,9 +152,9 @@ int main() {
     std::fprintf(out,"Titulo aguardando ser fechado pelo menu do sistema\n");
     std::fflush(out);fsync(fileno(out));std::fclose(out);
     if(!std::strcmp(mode,"smoke"))
-        azimuth::platform::notify(status?"Azimuth Launcher: diagnostico do titulo falhou; veja title.txt":
-                                       "Azimuth Launcher: diagnostico do titulo passou; veja title.txt");
-    azimuth::platform::notify("Azimuth Launcher: teste terminado (codigo "+std::to_string(status)+
+        azimuth::platform::notify(status?"Playmuth: diagnostico do titulo falhou; veja title.txt":
+                                       "Playmuth: diagnostico do titulo passou; veja title.txt");
+    azimuth::platform::notify("Playmuth: teste terminado (codigo "+std::to_string(status)+
                               "); feche o aplicativo pelo menu do PS5");
     waitForClose();
 }
