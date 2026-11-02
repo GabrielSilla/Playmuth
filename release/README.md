@@ -1,3 +1,5 @@
+<p align="center"><img src="playmuth-banner.png" alt="Playmuth" width="640"></p>
+
 # Playmuth
 
 **Playmuth** roda o motor [Azimuth](https://almost-there-games.itch.io/azimuth) no PS5 como um aplicativo homebrew nativo. Com ele, o Forza Horizon 2 roda no console em 4K, MSAA 4x e 60 FPS, com o controle do PS5.

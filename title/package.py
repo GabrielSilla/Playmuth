@@ -27,7 +27,7 @@ files = ["eboot.bin", "sce_sys/param.json", "sce_sys/icon0.png", "sce_module/lib
 files.extend(path.relative_to(dist).as_posix() for path in sorted((dist / "licenses").glob("*.txt")))
 manifest = {
     "titleId": "FAKE78002",
-    "version": "1.52",
+    "version": "1.53",
     "displayName": "Playmuth",
     "consoleValidated": False,
     "defaultMode": "host",
@@ -35,7 +35,7 @@ manifest = {
     "sha256": {name: hashlib.sha256((dist / name).read_bytes()).hexdigest() for name in files},
 }
 (dist / "build-info.json").write_text(json.dumps(manifest, indent=2) + "\n")
-archive = root / "dist" / "Playmuth-1.52.zip"
+archive = root / "dist" / "Playmuth-1.53.zip"
 with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as output:
     for path in sorted(dist.rglob("*")):
         if path.is_file():

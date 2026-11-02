@@ -1,6 +1,6 @@
-# Playmuth (Azimuth_PS5 como título) — 1.52
+# Playmuth (Azimuth_PS5 como título) — 1.53
 
-**Estado atual (02/11/2026):** o jogo roda perfeitamente no PS5 com o motor Azimuth 1.0.2: 4K, MSAA 4x, 60 FPS, sem engasgos, controle funcionando. Pacote `dist/Playmuth-1.52.zip` (titleId FAKE78002). Desde a 1.52 o título se chama **Playmuth**, para a distribuição pública.
+**Estado atual (02/11/2026):** o jogo roda perfeitamente no PS5 com o motor Azimuth 1.0.2: 4K, MSAA 4x, 60 FPS, sem engasgos, controle funcionando. Pacote `dist/Playmuth-1.53.zip` (titleId FAKE78002). Desde a 1.52 o título se chama **Playmuth**, para a distribuição pública.
 
 As versões estão em ordem cronológica de baixo para cima até a 1.27, logo abaixo. A partir da 1.28 elas foram acrescentadas no **fim** deste arquivo (seção "Título 1.28" em diante). O resumo de cada versão está em `HISTORICO_DE_ALTERACOES.md`, e as lições em `docs/BASE_DE_CONHECIMENTO_PS5.md`.
 
@@ -1679,3 +1679,7 @@ Preparação para a distribuição pública:
 - README do repositório público em `release/README.md`.
 
 contentVersion 01.000.152. SHA-256 do eboot.bin: `c25e9bce4695f21be15eadc900746816695caec7735b2fa5c822735174d27e24`. Sem teste no Linux; console pendente (só nome, ícone e modo padrão mudaram).
+
+## Título 1.53 — ícone e banner do Playmuth (02/11/2026)
+
+O usuário gerou com o GPT a identidade do Playmuth: um "P" ciano com linhas de velocidade, um triângulo de "play" e uma agulha de bússola, sobre azul-marinho escuro. O ícone entra em `assets/playmuth-icon.png`, convertido para 512 x 512 PNG RGB a partir do original de 1254 x 1254 (`assets/playmuth-icon-source.png`). O `make_icon.py` agora só confere o formato (PNG, 512 x 512, 8 bits, RGB sem alfa) e copia o arquivo para `sce_sys/icon0.png`. O anel com triângulo da 1.52 (`playmuth-symbol.svg`) saiu. O banner de 1280 x 640 vai para `release/playmuth-banner.png`, no topo do README público. Código do host igual ao da 1.52. contentVersion 01.000.153. SHA-256 do eboot.bin: `b99ee3228ec104d332034e878d119b8e00153124ed799093646595e1aae4855f`. Pacote: `dist/Playmuth-1.53.zip`.

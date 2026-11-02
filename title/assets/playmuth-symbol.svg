@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Playmuth: a ring with a play triangle. Filled even-odd: the inner circle
-       cuts the ring, the triangle sits inside it. -->
-  <path d="M 256 56 C 366.46 56 456 145.54 456 256 C 456 366.46 366.46 456 256 456 C 145.54 456 56 366.46 56 256 C 56 145.54 145.54 56 256 56 Z"/>
-  <path d="M 256 92 C 346.57 92 420 165.43 420 256 C 420 346.57 346.57 420 256 420 C 165.43 420 92 346.57 92 256 C 92 165.43 165.43 92 256 92 Z"/>
-  <polygon points="212,160 212,352 370,256"/>
-</svg>

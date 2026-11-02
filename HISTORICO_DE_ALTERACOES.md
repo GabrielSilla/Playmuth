@@ -1085,3 +1085,7 @@ O usuário confirmou que a 1.51 ficou perfeita: o jogo roda no motor Azimuth 1.0
 ## 02/11/2026 — título 1.52: Playmuth
 
 O título passa a se chamar **Playmuth**, com ícone próprio (anel com triângulo de "play"). O logo e o símbolo do Azimuth saíram do projeto: são marca da Almost There Games, e o usuário não tem autorização para usá-los. Sem o arquivo `title-mode`, o título agora roda o jogo (`host`). Como o eboot linka código GPL-3.0 (boilerplate e libc do ps5-payload-sdk), o projeto ganha um `LICENSE` GPL-3.0 e cada release pública leva o código-fonte. README do repositório público em release/README.md. contentVersion 01.000.152.
+
+## 02/11/2026 — título 1.53: ícone e banner do Playmuth
+
+Ícone gerado pelo usuário com o GPT ("P" ciano com linhas de velocidade, triângulo de play e agulha de bússola) convertido para 512 x 512 RGB em title/assets/playmuth-icon.png. O make_icon.py passa a conferir e copiar esse arquivo. Banner de 1280 x 640 em release/playmuth-banner.png, no README público. Host igual ao da 1.52. contentVersion 01.000.153.

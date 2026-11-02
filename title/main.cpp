@@ -129,7 +129,7 @@ int main() {
         if(std::fscanf(input,"%31s",mode)!=1)std::strcpy(mode,"host");
         std::fclose(input);
     }
-    std::fprintf(out,"Playmuth title 1.52, modo=%s, main=%p, pid=%d\n",mode,
+    std::fprintf(out,"Playmuth title 1.53, modo=%s, main=%p, pid=%d\n",mode,
                  reinterpret_cast<void*>(main),static_cast<int>(getpid()));
     std::fflush(out);fsync(fileno(out));
     int status=1;
